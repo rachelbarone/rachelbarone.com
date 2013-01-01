@@ -12,8 +12,9 @@ class MessageMailer < ActionMailer::Base
   end
 
   def confirmation(message)
+    @message = message
     mail(
-      :to => "#{message.first_name} #{message.last_name} <message.email>",
+      :to => "#{message.first_name} #{message.last_name} <#{message.email}>",
       :subject => "Thank You for Your Message!"
     )
   end

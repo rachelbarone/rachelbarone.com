@@ -1,1 +1,10 @@
-<%= @message.body %>
+Hi, Rachel!
+
+You received a new message :) Here are the details:
+
+<%= @message.list_attributes.html_safe %>
+
+Hit reply to message <%= "<i>#{@message.first_name}</i>".html_safe %> back!
+
+Thanks,
+bot@rachelbarone.com

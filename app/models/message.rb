@@ -9,7 +9,7 @@ class Message < ActiveRecord::Base
 
     self.attributes.each do |k,v|
       if k == "email"
-        html += "<b>#{k.humanize}:</b>&emsp;<a href='#{v}'>#{v}</a>"
+          html += "<b>#{k.humanize}:</b>&emsp;<a href='mailto#{v}'>#{v}</a>"
       else
         html += "<b>#{k.humanize}:</b>&emsp;#{v}"
       end

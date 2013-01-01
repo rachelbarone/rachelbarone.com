@@ -2,44 +2,45 @@
         <h2>Contact</h2>
         <p>Fill out the form below or send an e-mail to <a href="mailto:info@rachelbarone.com">info@rachelbarone.com</a>.</p>
 	<form action="<%= messages_url %>" method="post">
+    <input type="hidden" name="csrf_authenticity_token" value="<%= form_authenticity_token %>">
 		<label>First Name *
-			<input name="message[first_name]" type="text">
+			<input name="message[first_name]" type="text" value="<%= @message.first_name %>">
 		</label>
-		
+
 		<label>Last Name *
-			<input name="message[last_name]" type="text">
+			<input name="message[last_name]" type="text" value="<%= @message.last_name %>">
 		</label>
-		
+
 		<label>Email *
-			<input name="message[email]" type="email">
+			<input name="message[email]" type="email" value="<%= @message.email %>">
 		</label>
-		
+
 		<label>City
-			<input type="message[city]" type="text">
+			<input type="message[city]" type="text" value="<%= @message.city %>">
 		</label>
-		
+
 		<label>State
-			<input type="message[state]" type="text">
+			<input type="message[state]" type="text" value="<%= @message.state %>">
 		</label>
-		
+
 		<label>Country
-			<input type="message[country]" type="text">
+			<input type="message[country]" type="text" value="<%= @message.country %>">
 		</label>
-		
+
 		<label>Phone
-			<input type="message[phone]" type="text">
+			<input type="message[phone]" type="text" value="<%= @message.phone %>">
 		</label>
-		
+
 		<label for="message_referrer">
 			How did you hear about me?
 		</label>
-		<textarea id="message_referrer" name="message[referrer]"></textarea>
-		
+		<textarea id="message_referrer" name="message[referrer]"><%= @message.referrer %></textarea>
+
 		<label for="message_body">
 			What's your message? *
 		</label>
-		<textarea id="message_body" name="message[body]"></textarea>
-				
+		<textarea id="message_body" name="message[body]"><%= @message.body %></textarea>
+
 		<input type="submit">
 	</form>
 </main>
