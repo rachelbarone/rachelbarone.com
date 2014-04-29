@@ -13,7 +13,8 @@
  */
 
 body, header, img, nav, ul, li, main, p, a,
-label, input, textarea, h1, h2, h3, form {
+label, input, textarea, h1, h2, h3, h4, form, 
+section, datetime, summary {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -50,6 +51,20 @@ main {
 h2 {
 	margin-bottom: 1em;
 	font-size: 1.5em;
+}
+
+h3 {
+	color: #333;
+	font-size: 1.1em;
+	margin-bottom: 0.5em;
+}
+
+h4 {
+	color: #555;
+}
+
+p {
+	margin-bottom: 1em;
 }
 
 label {
