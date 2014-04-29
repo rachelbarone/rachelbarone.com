@@ -27,6 +27,7 @@ section, datetime, summary {
 
 body {
 	margin: 2em;
+	max-width: 600px;
 }
 
 img {
