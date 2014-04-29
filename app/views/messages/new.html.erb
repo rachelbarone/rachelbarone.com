@@ -1,0 +1,44 @@
+<main id="contact">
+	<h2>Contact</h2>
+	<form action="<%= messages_url %>" method="post">
+		<label>First Name
+			<input name="message[first_name]" type="text">
+		</label>
+		
+		<label>Last Name
+			<input name="message[last_name]" type="text">
+		</label>
+		
+		<label>Email
+			<input name="message[email]" type="email">
+		</label>
+		
+		<label>City
+			<input type="message[city]" type="text">
+		</label>
+		
+		<label>State
+			<input type="message[state]" type="text">
+		</label>
+		
+		<label>Country
+			<input type="message[country]" type="text">
+		</label>
+		
+		<label>Phone
+			<input type="message[phone]" type="text">
+		</label>
+		
+		<label for="message_referrer">
+			How did you hear about me?
+		</label>
+		<textarea id="message_referrer" name="message[referrer]"></textarea>
+		
+		<label for="message_body">
+			What's your message?
+		</label>
+		<textarea id="message_body" name="message[body]"></textarea>
+				
+		<input type="submit">
+	</form>
+</main>

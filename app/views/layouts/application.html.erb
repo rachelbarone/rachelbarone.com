@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rachel Barone</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%#= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+		
+	<header>
+		<img src="https://s3-us-west-2.amazonaws.com/rachelbarone/logo_large.png" alt="Logo Large">
+			<img src="https://s3-us-west-2.amazonaws.com/rachelbarone/name_large.png" alt="Name Large">
+		<nav>
+			<ul>
+				<li><a href="<%= root_url %>">Home</a></li>
+				<li><a href="<%= bio_url %>">Bio</a></li>
+				<li><a href="<%= portfolio_url %>">Portfolio</a></li>
+				<li><a href="<%= resume_url %>">Resume</a></li>
+				<li><a href="<%= contact_url %>">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+		
+		
+  <% unless flash.keys.empty? %>
+  <ul id="flash">
+  <% flash.try(:each) do |name, messages| %>
+    <% messages.try(:each) do |message| %>
+      <li class="<%= name %>"><%= message %></li>
+    <% end %>
+  <% end %>
+  </ul>
+  <% end %>
+		
+	
+
+<%= yield %>
+
+</body>
+</html>
