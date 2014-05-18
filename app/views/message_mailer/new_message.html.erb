@@ -1,0 +1,15 @@
+<strong>Date</strong>
+<p><%= @message.created_at %></p>
+
+<strong>From</strong>
+<p><%= "#{@message.first_name} #{@message.last_name}"%> 
+<%= "#{@message.city} #{@message.state} #{@message.country}" %> 
+<%= "#{@message.phone}"%></p>
+
+<% if !@message.referrer.blank? %>
+<strong>Referred by:</strong>
+<p><%= "#{@message.referrer}"%></p>
+<% end %>
+
+<strong>Message</strong>
+<p><%= @message.body %></p>

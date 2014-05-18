@@ -1,15 +1,15 @@
 <main id="contact">
 	<h2>Contact</h2>
 	<form action="<%= messages_url %>" method="post">
-		<label>First Name
+		<label>First Name *
 			<input name="message[first_name]" type="text">
 		</label>
 		
-		<label>Last Name
+		<label>Last Name *
 			<input name="message[last_name]" type="text">
 		</label>
 		
-		<label>Email
+		<label>Email *
 			<input name="message[email]" type="email">
 		</label>
 		
@@ -35,7 +35,7 @@
 		<textarea id="message_referrer" name="message[referrer]"></textarea>
 		
 		<label for="message_body">
-			What's your message?
+			What's your message? *
 		</label>
 		<textarea id="message_body" name="message[body]"></textarea>
 				
