@@ -19,8 +19,8 @@ section, datetime, summary {
 	padding: 0;
 	border: 0;
 	list-style-type: none;
-	font-family: sans-serif;
-	color: black;
+	font-family: Futura-Light, "Futura Light", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+	color: #333333;
 	text-decoration: none;
 	font-size: 100%;
 }
@@ -45,8 +45,14 @@ header li {
 }
 
 main {
-	background-color: #fafafa;
+	background-color: #f0f0f0;
 	padding: 1em;
+}
+
+h1 {
+	display: inline-block;
+	font-size: 3em;
+	margin-bottom: 0.25em;
 }
 
 h2 {
