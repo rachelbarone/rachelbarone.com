@@ -32,6 +32,7 @@ body {
 
 img {
 	width: 25%;
+	float: left;
 }
 
 header {
@@ -76,6 +77,10 @@ p {
 
 label {
 	color: #aaa;
+}
+
+a:hover {
+	border-bottom: 1px solid black;
 }
 
 input, textarea {
