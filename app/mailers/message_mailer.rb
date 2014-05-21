@@ -4,8 +4,8 @@ class MessageMailer < ActionMailer::Base
   def new_message(message)
     @message = message
     mail(
-      #:to => "Rachel Barone <info@rachelbarone.com>",
-      :to => "Tim Campbell <tlc9406@gmail.com>",
+      :to => "Rachel Barone <info@rachelbarone.com>",
+      #:to => "Tim Campbell <tlc9406@gmail.com>",
       :subject => "New Message from #{message.first_name} #{message.last_name}",
       :reply_to => "#{message.first_name} #{message.last_name} <#{message.email}>"
     )
