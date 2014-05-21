@@ -1,15 +1,10 @@
-<strong>Date</strong>
-<p><%= @message.created_at %></p>
+<p>Hi, Rachel!</p>
 
-<strong>From</strong>
-<p><%= "#{@message.first_name} #{@message.last_name}"%> 
-<%= "#{@message.city} #{@message.state} #{@message.country}" %> 
-<%= "#{@message.phone}"%></p>
+<p>You received a new message :) Here are the details:</p>
 
-<% if !@message.referrer.blank? %>
-<strong>Referred by:</strong>
-<p><%= "#{@message.referrer}"%></p>
-<% end %>
+<blockquote><%= @message.list_attributes.html_safe %></blockquote>
 
-<strong>Message</strong>
-<p><%= @message.body %></p>
+<p>Hit reply to message <%= "<i>#{@message.first_name}</i>".html_safe %> back!</p>
+
+<p>Thanks,<br>
+bot@rachelbarone.com</p>
