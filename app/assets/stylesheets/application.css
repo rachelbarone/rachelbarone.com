@@ -42,9 +42,10 @@ main img {
     max-width: 600px;
 }
 
-img {
+header img {
 	width: 25%;
 	float: left;
+        margin-left: -1em;
 }
 
 header {
@@ -66,6 +67,7 @@ h1 {
 	display: inline-block;
 	font-size: 3em;
 	margin-bottom: 0.25em;
+        color: #000000;
 }
 
 h2 {
