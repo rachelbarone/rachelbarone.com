@@ -30,6 +30,10 @@ body {
 	max-width: 600px;
 }
 
+section {
+    margin-bottom: 2em;
+}
+
 img {
 	width: 25%;
 	float: left;
@@ -63,12 +67,13 @@ h2 {
 
 h3 {
 	color: #333;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	margin-bottom: 0.5em;
 }
 
 h4 {
 	color: #555;
+        font-size: 1.05em;
 }
 
 p {
