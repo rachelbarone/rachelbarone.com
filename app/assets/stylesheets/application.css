@@ -26,7 +26,8 @@ section, datetime, summary {
 }
 
 body {
-	margin: 2em;
+	margin: auto;
+        margin-bottom: 5em;
 	max-width: 600px;
 }
 
