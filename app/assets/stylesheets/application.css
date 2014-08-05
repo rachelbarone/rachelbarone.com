@@ -45,7 +45,7 @@ main img {
 header img {
 	width: 25%;
 	float: left;
-        margin-left: -1em;
+        margin-left: -0.645em;
 }
 
 header {
