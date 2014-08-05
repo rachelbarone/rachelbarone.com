@@ -34,6 +34,13 @@ section {
     margin-bottom: 2em;
 }
 
+main img {
+    display: block;
+    float: none;
+    width: 100%;
+    max-width: 600px;
+}
+
 img {
 	width: 25%;
 	float: left;
@@ -110,4 +117,11 @@ input[type="submit"] {
 
 footer {
 	margin-top: 1em;
+}
+
+.tag {
+    display: block;
+    text-align: center;
+    margin: 1em;
+    font-size: 1.5em;
 }
