@@ -128,3 +128,19 @@ footer {
     margin: 1em;
     font-size: 1.5em;
 }
+
+#flash .notices {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+#flash .errors {
+    border: 1px solid #ebccd1;
+    background-color: #f2dede;
+    color: #a94442;
+    padding: 5px;
+    margin-bottom: 2px;
+}
